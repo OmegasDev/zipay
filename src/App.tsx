@@ -45,9 +45,9 @@ function App() {
             <ScrollAnimation animationType="fade-right">
               <div className="flex items-center">
                 <img 
-                  src="/ziPay 1.png" 
+                  src="/ziPay.png" 
                   alt="ziPay Logo" 
-                  className="h-32 w-auto"
+                  className="h-16 w-auto"
                 />
               </div>
             </ScrollAnimation>
@@ -365,43 +365,55 @@ function App() {
               </div>
             </ScrollAnimation>
 
-            {/* Steps 2 & 3 - Side by Side */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* Step 2 */}
-              <ScrollAnimation animationType="fade-left" delay={400}>
-                <div className="mobile-card bg-off-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="relative mb-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-purple to-vibrant-purple rounded-full flex items-center justify-center mx-auto">
-                      <RefreshCw className="w-7 h-7 text-white" />
+            {/* Mobile Layout - Enhanced with Animations */}
+          <div className="md:hidden space-y-6">
+            {/* Step 1 - Full Width */}
+            <ScrollAnimation animationType="fade-right" delay={200}>
+              <div className="mobile-card bg-off-white rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="relative">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple to-vibrant-purple rounded-full flex items-center justify-center">
+                    <RefreshCw className="w-8 h-8 text-white" />
                     </div>
                     <div className="absolute -top-1 -right-1 w-6 h-6 bg-aqua rounded-full flex items-center justify-center text-white font-bold text-xs">
                       2
                     </div>
                   </div>
-                  <h3 className="text-lg font-semibold mb-3 text-center text-charcoal">We Convert It</h3>
-                  <p className="text-slate-gray text-sm leading-relaxed text-center mobile-text">
-                    Real-time conversion using the best exchange rates.
-                  </p>
+                  <div>
+                    <h3 className="text-xl font-semibold text-charcoal">We Convert It</h3>
+                    
+                  </div>
                 </div>
-              </ScrollAnimation>
+                <p className="text-slate-gray leading-relaxed mobile-text">
+                Real-time conversion using the best exchange rates.
+                </p>
+              </div>
+            </ScrollAnimation>
 
               {/* Step 3 */}
-              <ScrollAnimation animationType="fade-right" delay={600}>
-                <div className="mobile-card bg-off-white rounded-2xl p-6 shadow-lg">
-                  <div className="relative mb-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-purple to-vibrant-purple rounded-full flex items-center justify-center mx-auto">
-                      <Zap className="w-7 h-7 text-white" />
+              <ScrollAnimation animationType="fade-right" delay={200}>
+              <div className="mobile-card bg-off-white rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="relative">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple to-vibrant-purple rounded-full flex items-center justify-center">
+                    <Zap className="w-8 h-8 text-white" />
                     </div>
                     <div className="absolute -top-1 -right-1 w-6 h-6 bg-aqua rounded-full flex items-center justify-center text-white font-bold text-xs">
                       3
                     </div>
                   </div>
-                  <h3 className="text-lg font-semibold mb-3 text-center text-charcoal">Instant Delivery</h3>
-                  <p className="text-slate-gray text-sm leading-relaxed text-center mobile-text">
-                    Money arrives in seconds, no delays or hassles.
-                  </p>
+                  <div>
+                    <h3 className="text-xl font-semibold text-charcoal">Instant Delivery</h3>
+                    
+                  </div>
                 </div>
-              </ScrollAnimation>
+                <p className="text-slate-gray leading-relaxed mobile-text">
+                Money arrives in seconds, no delays or hassles.
+                </p>
+              </div>
+            </ScrollAnimation>
+
+
             </div>
           </div>
         </div>
@@ -649,9 +661,9 @@ function App() {
               <div>
                 <div className="flex items-center mb-4">
                   <img 
-                    src="/ziPay 1.png" 
+                    src="/ziPay.png" 
                     alt="ziPay Logo" 
-                    className="h-40 w-50 object-contain"
+                    className="h-40 w-40 object-contain"
                   />
                 </div>
                 <p className="text-slate-gray text-sm mobile-text">
